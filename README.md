@@ -8,7 +8,7 @@ curl -sSL https://raw.githubusercontent.com/BGMSound/kubeadm-installer/main/kube
 to initialize the control plane:
 
 ```ssh
-kubeadm init \
+sudo kubeadm init \
     --control-plane-endpoint=<YOUR_CONTROL_PLANE_ENDPOINT> \
     --apiserver-advertise-address=<YOUR_APISERVER_ADVERTISE_ADDRESS> \
     --pod-network-cidr=10.244.0.0/16 \
